@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Starting an Open Source Project</title>
+</head>
+<style>
+    #heading{
+        font-size: 40px;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-weight: 500;
+        text-align: center;
+        line-height: 1.2;  
+        margin-top: 30px;
+        margin-bottom: 0px;
+        margin-left: 70px;
+        margin-right: 70px;
+        color: rgb(0, 0, 0);
+
+    }
+    h1{
+        margin-left: 300px;
+        line-height: 1.2;
+        font-weight: 400;
+        margin-right: 300px;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        color: rgb(26, 26, 26);
+    }
+    h2{
+        margin-left: 300px;
+        line-height: 1.2;
+        font-weight: 400;
+        margin-right: 300px;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        color: rgb(26, 26, 26);
+        font-size: 30px;
+    }
+  
+ 
+    p{
+        font-family:medium-content-serif-font, Georgia, Cambria, "Times New Roman", Times, serif;
+        font-size: 23px;
+        margin-left: 300px;
+        margin-right: 300px;     
+        line-height: 1.5;
+        color: rgb(27, 27, 27);
+        
+    }
+    #sub_heading{
+        text-align: center;
+        margin-left: 230px;
+        margin-right: 230px;        
+        color:  rgb(59, 59, 59);
+        font-size: 32px;
+        font-weight: 600;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    ul,ol{
+        font-family:'Blanco';
+        font-size: 20px;
+        margin-left: 300px;
+        margin-right: 300px;     
+        line-height: 1.5;
+        color: rgb(27, 27, 27);
+    }
+   
+    body{
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        background-color: rgb(255, 255, 255);
+      
+    }
+    img{
+        object-fit: scale-down;
+        align-content: center;
+        max-width: 1000px;
+        max-height: 1000px;
+        margin-left: 250px;
+        /* border: 2px solid #ddd;
+        border-radius: 20px; */
+        padding: 0px;
+
+    }
+
+</style>
+<body>
+    <h1 align="center" id = "heading">Starting an Open Source Project</h1>
+    <h2 align="center" id = "sub_heading">The “what” and “why” of open source</h2>
+    
+    <p class="lead text-center text-gray col-md-8 mx-auto mb-4 position-relative">Learn more about the world of open source and get ready to launch your own project.</p><ol class="toc-list list-style-none">
+<li class="border-top">
+<a class="d-block py-3 px-3" href="#the-what-and-why-of-open-source">The what and why of open source</a>
+</li>
+<li class="border-top">
+<a class="d-block py-3 px-3" href="#should-i-launch-my-own-open-source-project">Should I launch my own open source project?</a>
+</li>
+<li class="border-top">
+<a class="d-block py-3 px-3" href="#launching-your-own-open-source-project">Launching your own open source project</a>
+</li>
+<li class="border-top">
+<a class="d-block py-3 px-3" href="#naming-and-branding-your-project">Naming and branding your project</a>
+</li>
+<li class="border-top">
+<a class="d-block py-3 px-3" href="#your-pre-launch-checklist">Your pre-launch checklist</a>
+</li>
+</ol><h2 id="the-what-and-why-of-open-source">The “what” and “why” of open source</h2><p>So you’re thinking about getting started with open source? Congratulations! The world appreciates your contribution. Let’s talk about what open source is and why people do it.</p><p>When a project is open source, that means <strong>anybody is free to use, study, modify, and distribute your project for any purpose.</strong> These permissions are enforced through <a href="https://opensource.org/licenses">an open source license</a>.</p><p>Open source is powerful because it lowers the barriers to adoption and collaboration, allowing people to spread and improve projects quickly. Also because it gives users a potential to control their own computing, relative to closed source. For example, a business using open source software has the option to hire someone to make custom improvements to the software, rather than relying exclusively on a closed source vendor’s product decisions.</p><p><em>Free software</em> refers to the same set of projects as <em>open source</em>. Sometimes you’ll also see <a href="https://en.wikipedia.org/wiki/Free_and_open-source_software">these terms</a> combined as “free and open source software” (FOSS) or “free, libre, and open source software” (FLOSS). <em>Free</em> and <em>libre</em> refer to freedom, <a href="#does-open-source-mean-free-of-charge">not price</a>.</p><p><img alt="avatar" class="pquote-avatar" src="https://avatars.githubusercontent.com/kentcdodds?s=180"/>
+  One of the most rewarding experiences I get out of using and collaborating on open source comes from the relationships that I build with other developers facing many of the same problems I am.</p><p class="pquote-credit">
+— <a class="user-mention" href="https://github.com/kentcdodds">@kentcdodds</a>, <a href="https://kentcdodds.com/blog/how-getting-into-open-source-has-been-awesome-for-me">“How getting into Open Source has been awesome for me”</a>
+</p><p><a href="https://ben.balter.com/2015/11/23/why-open-source/">There are many reasons</a> why a person or organization would want to open source a project. Some examples include:</p><ul>
+<li>
+<p><strong>Collaboration:</strong> Open source projects can accept changes from anybody in the world. <a href="https://github.com/exercism/">Exercism</a>, for example, is a programming exercise platform with over 350 contributors.</p>
+</li>
+<li>
+<p><strong>Adoption and remixing:</strong> Open source projects can be used by anyone for nearly any purpose. People can even use it to build other things. <a href="https://github.com/WordPress">WordPress</a>, for example, started as a fork of an existing project called <a href="https://github.com/WordPress/book/blob/HEAD/Content/Part%201/2-b2-cafelog.md">b2</a>.</p>
+</li>
+<li>
+<p><strong>Transparency:</strong> Anyone can inspect an open source project for errors or inconsistencies. Transparency matters to governments like <a href="https://medium.com/@bozhobg/bulgaria-got-a-law-requiring-open-source-98bf626cf70a">Bulgaria</a> or the <a href="https://sourcecode.cio.gov/">United States</a>, regulated industries like banking or healthcare, and security software like <a href="https://github.com/letsencrypt">Let’s Encrypt</a>.</p>
+</li>
+</ul><p><strong>Collaboration:</strong> Open source projects can accept changes from anybody in the world. <a href="https://github.com/exercism/">Exercism</a>, for example, is a programming exercise platform with over 350 contributors.</p><p><strong>Adoption and remixing:</strong> Open source projects can be used by anyone for nearly any purpose. People can even use it to build other things. <a href="https://github.com/WordPress">WordPress</a>, for example, started as a fork of an existing project called <a href="https://github.com/WordPress/book/blob/HEAD/Content/Part%201/2-b2-cafelog.md">b2</a>.</p><p><strong>Transparency:</strong> Anyone can inspect an open source project for errors or inconsistencies. Transparency matters to governments like <a href="https://medium.com/@bozhobg/bulgaria-got-a-law-requiring-open-source-98bf626cf70a">Bulgaria</a> or the <a href="https://sourcecode.cio.gov/">United States</a>, regulated industries like banking or healthcare, and security software like <a href="https://github.com/letsencrypt">Let’s Encrypt</a>.</p><p>Open source isn’t just for software, either. You can open source everything from data sets to books. Check out <a href="https://github.com/explore">GitHub Explore</a> for ideas on what else you can open source.</p><p>One of open source’s biggest draws is that it does not cost money. “Free of charge”, however, is a byproduct of open source’s overall value.</p><p>Because <a href="https://opensource.org/osd-annotated">an open source license requires</a> that anyone can use, modify, and share your project for nearly any purpose, projects themselves tend to be free of charge. If the project cost money to use, anyone could legally make a copy and use the free version instead.</p><p>As a result, most open source projects are free, but “free of charge” is not part of the open source definition. There are ways to charge for open source projects indirectly through dual licensing or limited features, while still complying with the official definition of open source.</p><h2 id="should-i-launch-my-own-open-source-project">Should I launch my own open source project?</h2><p>The short answer is yes, because no matter the outcome, launching your own project is a great way to learn how open source works.</p><p>If you’ve never open sourced a project before, you might be nervous about what people will say, or whether anyone will notice at all. If this sounds like you, you’re not alone!</p><p>Open source work is like any other creative activity, whether it’s writing or painting. It can feel scary to share your work with the world, but the only way to get better is to practice - even if you don’t have an audience.</p><p>If you’re not yet convinced, take a moment to think about what your goals might be.</p><p>Goals can help you figure out what to work on, what to say no to, and where you need help from others. Start by asking yourself,  <em>why am I open sourcing this project?</em></p><p>There is no one right answer to this question. You may have multiple goals for a single project, or different projects with different goals.</p><p>If your only goal is to show off your work, you may not even want contributions, and even say so in your README. On the other hand, if you do want contributors, you’ll invest time into clear documentation and making newcomers feel welcome.</p><p><img alt="avatar" class="pquote-avatar" src="https://avatars.githubusercontent.com/mavris?s=180"/>
+  At some point I created a custom UIAlertView that I was using…and I decided to make it open source. So I modified it to be more dynamic and uploaded it to GitHub. I also wrote my first documentation explaining to other developers how to use it on their projects. Probably nobody ever used it because it was a simple project but I was feeling good about my contribution.</p><p class="pquote-credit">
+— <a class="user-mention" href="https://github.com/mavris">@mavris</a>, <a href="https://medium.com/rocknnull/self-taught-software-engineers-why-open-source-is-important-to-us-fe2a3473a576">“Self-taught Software Developers: Why Open Source is important to us”</a>
+</p><p>As your project grows, your community may need more than just code from you. Responding to issues, reviewing code, and evangelizing your project are all important tasks in an open source project.</p><p>While the amount of time you spend on non-coding tasks will depend on the size and scope of your project, you should be prepared as a maintainer to address them yourself or find someone to help you.</p><p><strong>If you’re part of a company open sourcing a project,</strong> make sure your project has the internal resources it needs to thrive. You’ll want to identify who’s responsible for maintaining the project after launch, and how you’ll share those tasks with your community.</p><p>If you need a dedicated budget or staffing for promotion, operations and maintaining the project, start those conversations early.</p><p><img alt="avatar" class="pquote-avatar" src="https://avatars.githubusercontent.com/captainsafia?s=180"/>
+  As you begin to open source the project, it’s important to make sure that your management processes take into consideration the contributions and abilities of the community around your project. Don’t be afraid to involve contributors who are not employed in your business in key aspects of the project — especially if they are frequent contributors.</p><p class="pquote-credit">
+— <a class="user-mention" href="https://github.com/captainsafia">@captainsafia</a>, <a href="https://dev.to/captainsafia/so-you-wanna-open-source-a-project-eh-5779">“So you wanna open source a project, eh?”</a>
+</p><p>If your goal is to learn how to collaborate with others or understand how open source works, consider contributing to an existing project. Start with a project that you already use and love. Contributing to a project can be as simple as fixing typos or updating documentation.</p><p>If you’re not sure how to get started as a contributor, check out our <a href="../how-to-contribute/">How to Contribute to Open Source guide</a>.</p><h2 id="launching-your-own-open-source-project">Launching your own open source project</h2><p>There is no perfect time to open source your work. You can open source an idea, a work in progress, or after years of being closed source.</p><p>Generally speaking, you should open source your project when you feel comfortable having others view, and give feedback on, your work.</p><p>No matter which stage you decide to open source your project, every project should include the following documentation:</p><ul>
+<li><a href="https://help.github.com/articles/open-source-licensing/#where-does-the-license-live-on-my-repository">Open source license</a></li>
+<li><a href="https://help.github.com/articles/create-a-repo/#commit-your-first-change">README</a></li>
+<li><a href="https://help.github.com/articles/setting-guidelines-for-repository-contributors/">Contributing guidelines</a></li>
+<li><a href="../code-of-conduct/">Code of conduct</a></li>
+</ul><p>As a maintainer, these components will help you communicate expectations, manage contributions, and protect everyone’s legal rights (including your own). They significantly increase your chances of having a positive experience.</p><p>If your project is on GitHub, putting these files in your root directory with the recommended filenames will help GitHub recognize and automatically surface them to your readers.</p><p>An open source license guarantees that others can use, copy, modify, and contribute back to your project without repercussions. It also protects you from sticky legal situations. <strong>You must include a license when you launch an open source project.</strong></p><p>Legal work is no fun. The good news is that you can copy and paste an existing license into your repository. It will only take a minute to protect your hard work.</p><p><a href="https://choosealicense.com/licenses/mit/">MIT</a>, <a href="https://choosealicense.com/licenses/apache-2.0/">Apache 2.0</a>, and <a href="https://choosealicense.com/licenses/gpl-3.0/">GPLv3</a> are the most popular open source licenses, but <a href="https://choosealicense.com">there are other options</a> to choose from.</p><p>When you create a new project on GitHub, you are given the option to select a license. Including an open source license will make your GitHub project open source.</p><p><img alt="Pick a license" src="/assets/images/starting-a-project/repository-license-picker.png"/></p><p>If you have other questions or concerns around the legal aspects of managing an open source project, <a href="../legal/">we’ve got you covered</a>.</p><p>READMEs do more than explain how to use your project. They also explain why your project matters, and what your users can do with it.</p><p>In your README, try to answer the following questions:</p><ul>
+<li>What does this project do?</li>
+<li>Why is this project useful?</li>
+<li>How do I get started?</li>
+<li>Where can I get more help, if I need it?</li>
+</ul><p>You can use your README to answer other questions, like how you handle contributions, what the goals of the project are, and information about licenses and attribution. If you don’t want to accept contributions, or your project is not yet ready for production, write this information down.</p><p><img alt="avatar" class="pquote-avatar" src="https://avatars.githubusercontent.com/tracymakes?s=180"/>
+  Better documentation means more users, less support requests, and more contributors. (…) Remember that your readers aren’t you. There are people who might come to a project who have completely different experiences.</p><p class="pquote-credit">
+— <a class="user-mention" href="https://github.com/tracymakes">@tracymakes</a>, <a href="https://www.youtube.com/watch?v=8LiV759Bje0&amp;list=PLmV2D6sIiX3U03qc-FPXgLFGFkccCEtfv&amp;index=10">“Writing So Your Words Are Read (video)”</a>
+</p><p>Sometimes, people avoid writing a README because they feel like the project is unfinished, or they don’t want contributions. These are all very good reasons to write one.</p><p>For more inspiration, try using <a class="user-mention" href="https://github.com/dguo">@dguo</a>’s <a href="https://www.makeareadme.com/">“Make a README” guide</a> or <a class="user-mention" href="https://github.com/PurpleBooth">@PurpleBooth</a>’s <a href="https://gist.github.com/PurpleBooth/109311bb0361f32d87a2">README template</a> to write a complete README.</p><p>When you include a README file in the root directory, GitHub will automatically display it on the repository homepage.</p><p>A CONTRIBUTING file tells your audience how to participate in your project. For example, you might include information on:</p><ul>
+<li>How to file a bug report (try using <a href="https://github.com/blog/2111-issue-and-pull-request-templates">issue and pull request templates</a>)</li>
+<li>How to suggest a new feature</li>
+<li>How to set up your environment and run tests</li>
+</ul><p>In addition to technical details, a CONTRIBUTING file is an opportunity to communicate your expectations for contributions, such as:</p><ul>
+<li>The types of contributions you’re looking for</li>
+<li>Your roadmap or vision for the project</li>
+<li>How contributors should (or should not) get in touch with you</li>
+</ul><p>Using a warm, friendly tone and offering specific suggestions for contributions (such as writing documentation, or making a website) can go a long way in making newcomers feel welcomed and excited to participate.</p><p>For example, <a href="https://github.com/activeadmin/activeadmin/">Active Admin</a> starts <a href="https://github.com/activeadmin/activeadmin/blob/HEAD/CONTRIBUTING.md">its contributing guide</a> with:</p><blockquote>
+<p>First off, thank you for considering contributing to Active Admin. It’s people like you that make Active Admin such a great tool.</p>
+</blockquote><p>First off, thank you for considering contributing to Active Admin. It’s people like you that make Active Admin such a great tool.</p><p>In the earliest stages of your project, your CONTRIBUTING file can be simple. You should always explain how to report bugs or file issues, and any technical requirements (like tests) to make a contribution.</p><p>Over time, you might add other frequently asked questions to your CONTRIBUTING file. Writing down this information means fewer people will ask you the same questions over and over again.</p><p>For more help with writing your CONTRIBUTING file, check out <a class="user-mention" href="https://github.com/nayafia">@nayafia</a>’s <a href="https://github.com/nayafia/contributing-template/blob/HEAD/CONTRIBUTING-template.md">contributing guide template</a> or <a class="user-mention" href="https://github.com/mozilla">@mozilla</a>’s <a href="https://mozillascience.github.io/working-open-workshop/contributing/">“How to Build a CONTRIBUTING.md”</a>.</p><p>Link to your CONTRIBUTING file from your README, so more people see it. If you <a href="https://help.github.com/articles/setting-guidelines-for-repository-contributors/">place the CONTRIBUTING file in your project’s repository</a>, GitHub will automatically link to your file when a contributor creates an issue or opens a pull request.</p><p><img alt="Contributing guidelines" src="/assets/images/starting-a-project/Contributing-guidelines.jpg"/></p><p><img alt="avatar" class="pquote-avatar" src="https://avatars.githubusercontent.com/mlynch?s=180"/>
+  We’ve all had experiences where we faced what was probably abuse either as a maintainer trying to explain why something had to be a certain way, or as a user…asking a simple question. (…) A code of conduct becomes an easily referenced and linkable document that indicates that your team takes constructive discourse very seriously.</p><p class="pquote-credit">
+— <a class="user-mention" href="https://github.com/mlynch">@mlynch</a>, <a href="https://medium.com/ionic-and-the-mobile-web/making-open-source-a-happier-place-3b90d254f5f">“Making Open Source a Happier Place”</a>
+</p><p>Finally, a code of conduct helps set ground rules for behavior for your project’s participants. This is especially valuable if you’re launching an open source project for a community or company. A code of conduct empowers you to facilitate healthy, constructive community behavior, which will reduce your stress as a maintainer.</p><p>For more information, check out our <a href="../code-of-conduct/">Code of Conduct guide</a>.</p><p>In addition to communicating <em>how</em> you expect participants to behave, a code of conduct also tends to describe who these expectations apply to, when they apply, and what to do if a violation occurs.</p><p>Much like open source licenses, there are also emerging standards for codes of conduct, so you don’t have to write your own. The <a href="https://contributor-covenant.org/">Contributor Covenant</a> is a drop-in code of conduct that is used by <a href="https://www.contributor-covenant.org/adopters">over 40,000 open source projects</a>, including Kubernetes, Rails, and Swift. No matter which text you use, you should be prepared to enforce your code of conduct when necessary.</p><p>Paste the text directly into a CODE_OF_CONDUCT file in your repository. Keep the file in your project’s root directory so it’s easy to find, and link to it from your README.</p><h2 id="naming-and-branding-your-project">Naming and branding your project</h2><p>Branding is more than a flashy logo or catchy project name. It’s about how you talk about your project, and who you reach with your message.</p><p>Pick a name that is easy to remember and, ideally, gives some idea of what the project does. For example:</p><ul>
+<li>
+<a href="https://github.com/getsentry/sentry">Sentry</a> monitors apps for crash reporting</li>
+<li>
+<a href="https://github.com/macournoyer/thin">Thin</a> is a fast and simple Ruby web server</li>
+</ul><p>If you’re building upon an existing project, using their name as a prefix can help clarify what your project does (for example, <a href="https://github.com/bitinn/node-fetch">node-fetch</a> brings <code class="language-plaintext highlighter-rouge">window.fetch</code> to Node.js).</p><p>Consider clarity above all. Puns are fun, but remember that some jokes might not translate to other cultures or people with different experiences from you. Some of your potential users might be company employees: you don’t want to make them uncomfortable when they have to explain your project at work!</p><p><a href="http://ivantomic.com/projects/ospnc/">Check for open source projects with a similar name</a>, especially if you share the same language or ecosystem. If your name overlaps with a popular existing project, you might confuse your audience.</p><p>If you want a website, Twitter handle, or other properties to represent your project, make sure you can get the names you want. Ideally, <a href="https://instantdomainsearch.com/">reserve those names now</a> for peace of mind, even if you don’t intend to use them just yet.</p><p>Make sure that your project’s name doesn’t infringe upon any trademarks. A company might ask you to take down your project later on, or even take legal action against you. It’s just not worth the risk.</p><p>You can check the <a href="http://www.wipo.int/branddb/en/">WIPO Global Brand Database</a> for trademark conflicts. If you’re at a company, this is one of the things your <a href="../legal/">legal team can help you with</a>.</p><p>Finally, do a quick Google search for your project name. Will people be able to easily find your project? Does something else appear in the search results that you wouldn’t want them to see?</p><p>Throughout the life of your project, you’ll do a lot of writing: READMEs, tutorials, community documents, responding to issues, maybe even newsletters and mailing lists.</p><p>Whether it’s official documentation or a casual email, your writing style is part of your project’s brand. Consider how you might come across to your audience and whether that is the tone you wish to convey.</p><p><img alt="avatar" class="pquote-avatar" src="https://avatars.githubusercontent.com/janl?s=180"/>
+  I tried to be involved with every thread on the mailing list, and showing exemplary behaviour, being nice to people, taking their issues seriously and trying to be helpful overall. After a while, people stuck around not to only ask questions, but to help with the answering as well, and to my complete delight, they mimicked my style.</p> 
+  
+    
+</body>
+</html>
