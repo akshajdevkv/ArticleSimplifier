@@ -3,8 +3,6 @@ import requests
 from string import Template
 import os
 
-os.environ['output_path'] = '/home/akshajdev/Desktop/Python Projects/Article-Simplifier/output.html'
-os.environ['template_path'] = '/home/akshajdev/Desktop/Python Projects/Article-Simplifier/template.html'
 output_path = os.environ.get('output_path')
 template_path = os.environ.get('template_path')
 url = 'https://medium.com/@ztrana/the-expert-generalist-why-the-future-belongs-to-polymaths-46b0e9edc7bc'
