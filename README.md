@@ -1,5 +1,5 @@
-# MediumScraper
-A WebScraper made using Python that scrapes the whole webpage of a medium blog post and converts it into a simple and minimalistic webpage.It removes ads,popups and other garbage stuff of that blog post
+# ArticleSimplifier
+A WebScraper made using Python that scrapes the whole webpage of a blog and converts it into a simple and minimalistic webpage.It removes ads,popups and other garbage stuff of that blog post
 ## How To Use It
 1.Clone this repository 
 
